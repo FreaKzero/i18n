@@ -1,0 +1,5 @@
+{
+  "common": {
+    "header": "Hello {{title}}"
+  }
+}
