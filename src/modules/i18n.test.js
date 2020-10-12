@@ -11,8 +11,11 @@ setupTranslations({
   },
   multimix: {
     mm: "There is {{b}} {{a}}",
-
     mm_plural: "There are {{b}} {{a}}",
+  },
+  multimixgerman: {
+    mm: "Dort ist {{b}} {{a}}",
+    mm_plural: "Dort sind {{b}} {{a}}",
   },
   plmix: {
     doing: "There is {{count}} cats {{doing}} (default)",
@@ -85,6 +88,14 @@ describe("useTranslation Hook", () => {
       </ul>
     );
   };
+
+
+  it("replacement order german", () => {
+    const component = shallow(
+      <PluralMultiMix namespace="multimixgerman" message="mm" />
+    );
+    expect(component).toMatchSnapshot();
+  });
 
   it("replacement order", () => {
     const component = shallow(

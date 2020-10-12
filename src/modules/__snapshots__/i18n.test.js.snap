@@ -167,6 +167,31 @@ exports[`useTranslation Hook replacement order 1`] = `
 </ul>
 `;
 
+exports[`useTranslation Hook replacement order german 1`] = `
+<ul>
+  <li
+    key="item_0"
+  >
+    Dort sind 0 cats
+  </li>
+  <li
+    key="item_1"
+  >
+    Dort ist 1 cats
+  </li>
+  <li
+    key="item_2"
+  >
+    Dort sind 2 cats
+  </li>
+  <li
+    key="item_5"
+  >
+    Dort sind 5 cats
+  </li>
+</ul>
+`;
+
 exports[`useTranslation Hook replaces multiple templates 1`] = `
 <h1>
   There are 3 cats
